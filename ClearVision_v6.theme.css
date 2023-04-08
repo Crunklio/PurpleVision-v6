@@ -87,4 +87,25 @@
   --bd-blue-active: var(--hover-color);
 }
 
-/* Any custom CSS below here */
+[class^="message-"] div[aria-label*="super" i]:has([class^="icon-"]),
+[class^="reactionInner-"] [class^="effectsWrapper-"],
+[class^="burstReactionTooltipPrompt-"],
+[class^="burstEmojiSection-"],
+[class*="colorPremiumGradient-"] {
+  display: none;
+}
+
+[class*="hideEmoji-"] {
+  opacity: 1;
+}
+
+[class*="burstReactionTooltipSpacer-"] {
+  border: none !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+[class^="reactionSelected-"] {
+  background: var(--background-tertiary) !important;
+}
+
